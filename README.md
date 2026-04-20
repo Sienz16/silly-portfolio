@@ -1,46 +1,44 @@
-# Astro Starter Kit: Basics
+# Sienz/OS ◉ Portfolio
 
-```sh
-bun create astro@latest -- --template basics
-```
+A retro-modern OS-style portfolio built with Astro, React, and a lot of caffeine. Designed to showcase the journey of a junior fullstack developer from Kota Kinabalu, Malaysia.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## 🚀 Features
 
-## 🚀 Project Structure
+- **Window Management**: Draggable, resizable (desktop), and bento-grid snapping windows.
+- **Mobile Optimized**: Full-screen mobile experience with focused window management.
+- **Retro Aesthetics**: CRT boot sequences, status bar, and a dock inspired by classic OS design.
+- **Live Components**: Real-time clock, status indicators, and interactive panes.
+- **Tweaks Panel**: On-the-fly customization of accent colors and section visibility.
 
-Inside of your Astro project, you'll see the following folders and files:
+## 🛠 Tech Stack
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src
-│   ├── assets
-│   │   └── astro.svg
-│   ├── components
-│   │   └── Welcome.astro
-│   ├── layouts
-│   │   └── Layout.astro
-│   └── pages
-│       └── index.astro
-└── package.json
-```
+- **Framework**: Astro (Static Output)
+- **UI Library**: React (v18) via unpkg (no-build React approach for the OS shell)
+- **Styling**: Vanilla CSS with modern primitives (Variables, Clamp, Container Queries)
+- **Runtime**: Bun
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+## 📦 Deployment
 
-## 🧞 Commands
+### Dokploy / Docker
 
-All commands are run from the root of the project, from a terminal:
+This project is containerized and ready for deployment on **Dokploy**.
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `bun install`             | Installs dependencies                            |
-| `bun dev`             | Starts local dev server at `localhost:4321`      |
-| `bun build`           | Build your production site to `./dist/`          |
-| `bun preview`         | Preview your build locally, before deploying     |
-| `bun astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `bun astro -- --help` | Get help using the Astro CLI                     |
+1.  **Clone the repository** to your server or connect your GitHub.
+2.  The `docker-compose.yml` is configured to build the Astro site and serve it using Nginx.
+3.  Deploy via Dokploy using the provided compose file.
 
-## 👀 Want to learn more?
+### Manual Commands
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+| Command | Action |
+| :--- | :--- |
+| `bun install` | Installs dependencies |
+| `bun run dev` | Starts local dev server |
+| `bun run build` | Build for production |
+
+## 🌏 About Sienz
+
+Junior Fullstack Developer | Kota Kinabalu, Sabah.
+Building systems, learning in public, and shipping software that someone actually leans forward to use.
+
+---
+Built with ◉ Sienz/OS

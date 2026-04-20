@@ -1,0 +1,13 @@
+services:
+  portfolio:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: sienz-portfolio
+    ports:
+      - "4321:80"
+    restart: always
+
+networks:
+  default:
+    driver: bridge
